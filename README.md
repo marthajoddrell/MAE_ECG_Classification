@@ -77,6 +77,7 @@ cd work_dirs_test
 
 # Run test 
 python tools/test.py /my_configs/testing/classification.py /work_dirs/checkpoint.pth
+```
 
 5. To test on Guangzhou data...
 
