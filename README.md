@@ -80,7 +80,28 @@ Output will be a folder 'work_dirs' containing:
   - vis_data folder
 - config.py file
 
-4. To test on physionet data, config files are contained in this repository in 'my_configs/testing'.
+4. To visualise the MAE reconstruction, can use the code in folder 'reconstruction'. The run the command:
+
+```
+python usemae.py
+```
+# Original Image
+![original image](https://github.com/user-attachments/assets/8b45ba77-2c10-45b2-afd6-1eb6f330b8f8)
+
+# Original
+![original](https://github.com/user-attachments/assets/2a86479c-37b5-4840-8f92-ae6f82d8bcd9)
+
+# Masked
+![masked](https://github.com/user-attachments/assets/5c6e9416-b288-45f4-ba22-2afd60856f06)
+
+# Reconstruction Visible
+![reconstruction visible](https://github.com/user-attachments/assets/f44fcdd6-341a-4657-b2dd-f4231010ce25)
+
+# Reconstruction
+![reconstruction](https://github.com/user-attachments/assets/5e53f633-eacf-4822-bc30-a279c5e12625)
+
+
+6. To test on physionet data, config files are contained in this repository in 'my_configs/testing'.
 
 ```
 # Create new folder to save test results
