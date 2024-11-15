@@ -94,7 +94,7 @@ python usemae.py
 # Masked
 ![masked](https://github.com/user-attachments/assets/5c6e9416-b288-45f4-ba22-2afd60856f06)
 
-# Reconstruction Visible
+# Reconstruction visible
 ![reconstruction visible](https://github.com/user-attachments/assets/f44fcdd6-341a-4657-b2dd-f4231010ce25)
 
 # Reconstruction
