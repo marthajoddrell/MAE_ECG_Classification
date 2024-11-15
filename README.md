@@ -41,6 +41,7 @@ In this repository, the folder 'my_configs/training' contains the configurations
 3. To train the MAE on dataset run in command line; **be mindful that wherever you execute this command, that is where the work_dirs will be saved e.g. output**:
 
 ```
+# Run training
 python tools/train.py /my_configs/training/mae_vit-base-16_8xb512-amp-coslr-300e_in1k.py
 ```
 
@@ -54,4 +55,10 @@ Output will be a folder 'work_dirs' containing:
 
 4. To run downstream classification task, config files are contained in this repository in 'my_configs/testing'.
 
+```
+# Create new folder to save test results
+mkdir work_dirs_test
+cd work_dirs_test
 
+# Run test 
+python tools/test.py /my_configs/testing/classification.py /work_dirs/checkpoint.pth
