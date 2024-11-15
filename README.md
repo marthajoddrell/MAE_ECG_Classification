@@ -66,7 +66,7 @@ Output will be a folder 'work_dirs' containing:
 - folder containing
   - log
   - vis_data folder
-- config .py file
+- config.py file
 
 4. To test on physionet data, config files are contained in this repository in 'my_configs/testing'.
 
