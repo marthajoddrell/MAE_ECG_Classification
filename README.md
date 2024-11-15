@@ -44,4 +44,14 @@ In this repository, the folder 'my_configs/training' contains the configurations
 python tools/train.py /my_configs/training/mae_vit-base-16_8xb512-amp-coslr-300e_in1k.py
 ```
 
+Output will be a folder 'work_dirs' containing:
+- epoch.pth files
+- last checkpoint file
+- folder containing
+  - log
+  - vis_data folder
+- config .py file
+
+4. To run downstream classification task, config files are contained in this repository in 'my_configs/testing'.
+
 
