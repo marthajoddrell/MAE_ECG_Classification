@@ -36,4 +36,12 @@ Then adjust associated configuration files (https://mmpretrain.readthedocs.io/en
 
 From the mmpretrain GitHub repository, you can select a model (https://github.com/open-mmlab/mmpretrain). For this application, the self-supervised MAE (CVPR'2022) was chosen. The GitHub repository contains all the configurations files however these will have been downloaded when installing mmpretrain in Step 1 (https://github.com/open-mmlab/mmpretrain/tree/main/configs/mae).
 
-In this repository, the folder 'my_configs' contains the configurations used for this project training of MAE. 
+In this repository, the folder 'my_configs/training' contains the configurations used for this project training of MAE. 
+
+3. To train the MAE on dataset run in command line; **be mindful that wherever you execute this command, that is where the work_dirs will be saved e.g. output**:
+
+```
+python tools/train.py /my_configs/training/mae_vit-base-16_8xb512-amp-coslr-300e_in1k.py
+```
+
+
