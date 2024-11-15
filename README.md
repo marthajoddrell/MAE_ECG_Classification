@@ -92,10 +92,10 @@ python usemae.py
 ![original](https://github.com/user-attachments/assets/2a86479c-37b5-4840-8f92-ae6f82d8bcd9)
 
 # Masked
-![masked](https://github.com/user-attachments/assets/5c6e9416-b288-45f4-ba22-2afd60856f06)
+![masked](https://github.com/user-attachments/assets/05ad05fc-7f7c-4687-a6bd-b691675b7f68)
 
 # Reconstruction visible
-![reconstruction visible](https://github.com/user-attachments/assets/f44fcdd6-341a-4657-b2dd-f4231010ce25)
+![reconstruction visible](https://github.com/user-attachments/assets/34217502-811e-4301-abe7-8bd63ab635c7)
 
 # Reconstruction
 ![reconstruction](https://github.com/user-attachments/assets/5e53f633-eacf-4822-bc30-a279c5e12625)
