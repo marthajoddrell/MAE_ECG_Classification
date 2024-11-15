@@ -1,5 +1,20 @@
 This project trains an MAE on ECG images that have been generated from publicly available time series data to extract features for downstream classification. The MAE will provide the basis for a foundation model. The MAE framework comes from mmpretrain (https://mmpretrain.readthedocs.io/en/dev/papers/mae.html).
 
+The data involved in this project is from 5 sources below:
+
+Public data:
+- Physionet (... images)
+
+Clinical data:
+- PRECISE (... images)
+- Huawei (... images)
+- L-HARP (... images)
+- Guangzhou (... images)
+
+The public data will be used for training the MAE and the clinical data for the downstream classification task. The PhysioNet data came from the Computing in Cardiology 2021 challenge [M. A. Reyna et al., "Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021," 2021 Computing in Cardiology (CinC), Brno, Czech Republic, 2021, pp. 1-4, doi: 10.23919/CinC53138.2021.9662687.]. This data was time series collected from 7 different sources, with 88,000 time series ECGs publicly available. Within this project, these time series ECGs were converted to realistic scanned images using ecg-plot and that was used as input for the MAE. When converting the physionet data from time series to images, multiple images were able to be generated from a singular time series due to extended time length, hence training of the MAE was performed on ... images. 
+
+The clinical data for downstream classification came from numerous different sources that are not publicly available. They all have different outcomes of interest.
+
 1. Create conda environment for MAE training and install mmpretrain:
 
 ```
@@ -53,7 +68,7 @@ Output will be a folder 'work_dirs' containing:
   - vis_data folder
 - config .py file
 
-4. To run downstream classification task, config files are contained in this repository in 'my_configs/testing'.
+4. To test on physionet data, config files are contained in this repository in 'my_configs/testing'.
 
 ```
 # Create new folder to save test results
@@ -62,3 +77,6 @@ cd work_dirs_test
 
 # Run test 
 python tools/test.py /my_configs/testing/classification.py /work_dirs/checkpoint.pth
+
+5. To test on Guangzhou data...
+
