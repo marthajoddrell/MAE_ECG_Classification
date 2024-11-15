@@ -21,6 +21,18 @@ The clinical data for downstream classification came from numerous different sou
 ![161739](https://github.com/user-attachments/assets/5d09b567-7dc0-4dc2-ae4a-db548889a988)
 Example of L-HARP scan. 
 
+<p align="center">
+  <figure style="display:inline-block">
+    <img src="https://github.com/user-attachments/assets/cb07d7d3-9d67-4e27-aaf4-a3a9c2290ffc" alt="Example of generated scanned image from PhysioNet data." width="45%">
+    <figcaption>Example of generated scanned image from PhysioNet data.</figcaption>
+  </figure>
+  <figure style="display:inline-block">
+    <img src="https://github.com/user-attachments/assets/5d09b567-7dc0-4dc2-ae4a-db548889a988" alt="Example of L-HARP scan." width="45%">
+    <figcaption>Example of L-HARP scan.</figcaption>
+  </figure>
+</p>
+
+
 1. Create conda environment for MAE training and install mmpretrain:
 
 ```
