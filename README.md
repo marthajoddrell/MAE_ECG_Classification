@@ -13,13 +13,7 @@ Clinical data:
 
 The public data will be used for training the MAE and the clinical data for the downstream classification task. The PhysioNet data came from the Computing in Cardiology 2021 challenge [M. A. Reyna et al., "Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021," 2021 Computing in Cardiology (CinC), Brno, Czech Republic, 2021, pp. 1-4, doi: 10.23919/CinC53138.2021.9662687.]. This data was time series collected from 7 different sources, with 88,000 time series ECGs publicly available. Within this project, these time series ECGs were converted to realistic scanned images using ecg-plot and that was used as input for the MAE. When converting the physionet data from time series to images, multiple images were able to be generated from a singular time series due to extended time length, hence training of the MAE was performed on ... images. 
 
-![image](https://github.com/user-attachments/assets/cb07d7d3-9d67-4e27-aaf4-a3a9c2290ffc)
-Example of generated scanned image from PhysioNet data.
-
 The clinical data for downstream classification came from numerous different sources that are not publicly available. They all have different outcomes of interest. However the clinical data differs from the public data since they are real scans, there is noise and artefacts present making them harder to classify. 
-
-![161739](https://github.com/user-attachments/assets/5d09b567-7dc0-4dc2-ae4a-db548889a988)
-Example of L-HARP scan. 
 
 <p align="center">
   <figure style="display:inline-block">
